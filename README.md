@@ -34,7 +34,7 @@ git clone https://github.com/christiantiquis/csv-upload.git
 #### 2. Navigate to the project directory:
 
 ```
-cd csv-upload-h2
+cd csv-upload
 ```
 
 #### 3. Build the project:
