@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Upload CSV File</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+      }
+      .sidebar {
+        min-width: 200px;
+        background-color: #f8f9fa;
+        padding: 15px;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3>Navigation</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/upload}">Upload CSV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/logs}">Entities List</a>
+        </li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+    <div class="content">
+      <h2>Upload CSV File</h2>
+      <form
+        action="#"
+        th:action="@{/upload}"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file" accept=".csv" />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
