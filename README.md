@@ -28,7 +28,7 @@ This project is a Java Spring Boot application that allows users to upload CSV f
 #### 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/csv-upload-h2.git
+git clone https://github.com/christiantiquis/csv-upload.git
 ```
 
 #### 2. Navigate to the project directory:
